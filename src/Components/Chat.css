@@ -1,0 +1,533 @@
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.login {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(120deg, rgb(43, 42, 42), black);
+  display: grid;
+  place-content: center;
+}
+
+.l-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+}
+
+.l-con > img {
+  background: transparent;
+}
+
+.l-con > input {
+  width: 200px;
+  height: 35px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(120deg, rgb(48, 47, 47), rgb(32, 32, 32));
+  margin: 15px;
+  text-indent: 10px;
+  color: white;
+  color: rgb(0, 119, 255);
+  font-size: small;
+}
+
+.l-con > button {
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(120deg, #006eff, rgb(0, 153, 255));
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.l-con > p {
+  background: transparent;
+  font-size: small;
+  color: rgb(202, 202, 202);
+  margin-top: 20px;
+}
+.l-con > p > span {
+  border: 1.5px solid rgb(132, 0, 255);
+  color: rgb(131, 0, 253);
+  padding: 5px 5px 7px 5px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.l-err {
+  color: red !important;
+  font-size: smaller !important;
+  transition: all 0.2s ease-in-out !important;
+  text-align: center;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.chat {
+  margin: 0;
+  background-color: black;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.c-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  top: 0;
+}
+.c-header > img {
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.c-header > div {
+  display: flex;
+  align-items: center;
+}
+.c-header > div > img {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(120deg, rgb(0, 162, 255), rgb(153, 0, 255));
+  padding: 10px 20px 10px 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0;
+}
+.c-header > div > p {
+  color: rgb(6, 67, 136);
+  font-size: large;
+  margin-left: 15px;
+  letter-spacing: 2.5px;
+  padding: 10px;
+}
+.c-header > div > p > span {
+  color: rgb(101, 9, 129);
+}
+
+.footer {
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.footer > div {
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(22, 22, 22);
+  border-radius: 40px;
+  padding: 15px;
+  box-shadow: 0 3px 10px 0 rgb(7, 48, 87);
+  margin: 15px 0;
+}
+.footer > div > img {
+  width: 25px;
+  background: transparent;
+}
+.footer > div > input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 132, 255);
+  text-align: left;
+  text-indent: 10px;
+}
+input:focus {
+  outline: none;
+}
+.footer > img {
+  width: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  background: linear-gradient(120deg, rgb(0, 162, 255), rgb(0, 110, 255));
+  box-shadow: 0 0 15px 0 rgb(0, 162, 255);
+  margin-left: 10px;
+  cursor: pointer;
+}
+#img {
+  width: 50px;
+  margin-left: -40px;
+  opacity: 0;
+}
+
+.con {
+  margin-top: 60px;
+  padding-bottom: 80px;
+  background: linear-gradient(120deg, #111, black);
+  overflow: auto;
+}
+.msg {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 20px 0;
+  height: max-content;
+  background: transparent;
+}
+
+.msg > img {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(120deg, rgb(0, 162, 255), rgb(0, 110, 255));
+  border-radius: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.m-cont {
+  max-width: 70vw;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+.m-cont > div {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(120deg, rgb(0, 162, 255), rgb(0, 110, 255));
+  border-radius: 15px;
+  color: white;
+  padding: 15px;
+}
+.mc-post > img {
+  width: 100%;
+  height: 100%;
+  max-height: 50vh;
+}
+.mc-post > p {
+  background: transparent;
+  color: white;
+  padding: 10px;
+  font-size: small;
+}
+.m-cont > p {
+  margin: 0;
+  background: transparent;
+}
+.mc-name {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 15px !important;
+}
+.mc-msg {
+  background: linear-gradient(
+    120deg,
+    rgb(0, 162, 255),
+    rgb(0, 110, 255)
+  ) !important;
+  border-radius: 50px;
+  color: white;
+  padding: 15px;
+}
+.mc-time {
+  color: rgb(0, 153, 255);
+  font-size: 11px;
+  margin-left: 15px;
+  text-align: right;
+  margin-right: 15px;
+}
+.left {
+  display: flex;
+  justify-content: flex-end !important;
+  flex-direction: row-reverse;
+  background: transparent;
+}
+.l-mc-post,
+.l-msg {
+  background: linear-gradient(
+    120deg,
+    rgb(204, 0, 255),
+    rgb(162, 0, 255)
+  ) !important;
+}
+.l-mc-name {
+  text-align: right;
+  margin-right: 15px !important;
+}
+.l-mc-time {
+  color: #a200ff !important;
+  text-align: center;
+}
+.l-mcont {
+  align-items: flex-end;
+}
+
+.create {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(120deg, rgb(43, 42, 42), black);
+  display: grid;
+  place-content: center;
+}
+
+#con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+}
+
+#con > input {
+  width: 200px;
+  height: 35px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(120deg, rgb(59, 59, 59), rgb(36, 35, 35));
+  margin: 15px;
+  text-indent: 10px;
+  color: white;
+}
+
+#con > button {
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(120deg, #006eff, rgb(0, 153, 255));
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+#imgCon {
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+#imgCon > img {
+  position: absolute;
+  right: 0;
+  padding: 7px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: linear-gradient(120deg, rgb(59, 59, 59), rgb(36, 35, 35));
+}
+
+#imgCon > input {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  margin-left: 105px;
+  cursor: pointer;
+  opacity: 0;
+}
+#con > input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.profile {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(120deg, #111, black);
+}
+.p-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  margin: 20px 0;
+}
+.p-head > img {
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  box-shadow: 20px 20px 60px #202020f8, 20px -20px 60px #1d1d1d;
+}
+.p-head > p {
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  margin: 15px;
+  letter-spacing: 2px;
+  background: transparent;
+}
+.p-head > span {
+  font-size: medium;
+  color: #006eff;
+  font-style: italic;
+  margin-top: -7px;
+  background: transparent;
+}
+.p-btns {
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  background: transparent;
+}
+
+.editBtn {
+  max-width: 290px;
+  height: 35px;
+  border: none;
+  border-radius: 7px;
+  background: linear-gradient(120deg, #006eff, rgb(0, 153, 255));
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+.p-imgs {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #141414;
+}
+.p-imgs > img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  background: linear-gradient(120deg, rgb(4, 36, 83), #111);
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 20px 20px 60px #000000, 20px -20px 60px #1d1d1d;
+}
+
+.p-nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  position: fixed;
+  bottom: 0;
+}
+.p-nav img {
+  width: 35px;
+  object-fit: contain;
+  background: transparent;
+}
+.p-nav > div {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 10px 0 #066cf19d;
+  border-radius: 50%;
+  margin: 10px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+.p-nav > div:first-of-type {
+  background: linear-gradient(180deg, #111, rgb(0, 0, 0));
+}
+.p-nav > div:last-of-type {
+  background: linear-gradient(120deg, #111, rgb(0, 0, 0));
+}
+.p-nav > div:last-of-type > img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+}
+
+.modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  display: grid;
+  place-content: center;
+}
+.modal > div {
+  padding: 40px 20px;
+  background-color: #111 !important;
+  position: relative;
+}
+.modal > div > img {
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.ustatus {
+  font-size: smaller;
+  color: rgb(2, 255, 2);
+  margin: 15px 0;
+}
+
+.loading {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+}
+
+.logout {
+  max-width: 290px;
+  height: 35px;
+  border: none;
+  border-radius: 7px;
+  background: linear-gradient(120deg, #ff0000, rgb(255, 38, 0));
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+.line {
+  width: 100vw;
+  margin: 15px 0;
+  background: linear-gradient(90deg, transparent, #3f3e3e, transparent);
+  height: 3px;
+}
+.p-btns {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+.p-btns > button {
+  flex: 0.5;
+  margin: 10px;
+}
+
+.zoom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  display: grid;
+  place-content: center;
+  z-index: 100;
+}
+
+.zoom img {
+  width: 80vw;
+  height: 80vh;
+  object-fit: contain;
+  background: transparent;
+}

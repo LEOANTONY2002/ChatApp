@@ -1,0 +1,32 @@
+{
+  "short_name": "Chamber of Secrets",
+  "name": "...",
+  "icons": [
+    {
+      "src": "logo64.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "logo114.png",
+      "type": "image/png",
+      "sizes": "114x114"
+    },
+
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "purpose": "any maskable",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  background-color: #000000;
+}
+
+.App {
+  background-color: #000000;
+  color: white;
+}
+
+.header {
+  height: 100px !important;
+  top: 0;
+  position: fixed;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  z-index: 10;
+}
+.icon {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 3px blue;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 5%;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.tab {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  margin-left: 4px;
+  box-shadow: 0 0 5px 1px blue;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
